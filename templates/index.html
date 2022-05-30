@@ -24,31 +24,17 @@
                 <div class="col">
                     <div class="card">
                         <div class="d-flex p-2 mb-3 bd-highlight justify-content-center">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                            <div v-for="(i in 9)">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">GPIO {{i}}</label>
+                                </div>
                             </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                            </div>
-                        </div>
-                        <div class="d-flex p-2 mb-3 bd-highlight justify-content-center">
-                            <input type="checkbox" class="btn-check" id="btn3" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label>
 
-                            <input type="checkbox" class="btn-check" id="btn4" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label>
-
-                            <input type="checkbox" class="btn-check" id="btn5" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label>
 
                         </div>
-                        <my-num min_val="0" max_val="11"></my-num>
+
+                        
                     </div>
                 </div>
                 <div class="card">
